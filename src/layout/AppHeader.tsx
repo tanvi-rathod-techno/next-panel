@@ -154,7 +154,7 @@ const AppHeader: React.FC = () => {
               </div>
             </form>
           </div>
-        </div>
+         </div>
         <div
           className={`${
             isApplicationMenuOpen ? "flex" : "hidden"
