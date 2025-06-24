@@ -10,9 +10,10 @@ const Pagination: React.FC<PaginationProps> = ({
   onPageChange,
 }) => {
   const pagesAroundCurrent = Array.from(
-    { length: Math.min(3, totalPages) },
-    (_, i) => i + Math.max(currentPage - 1, 1)
-  );
+    { length: 3 },
+    (_, i) => currentPage - 1 + i
+  ).filter((page) => page >= 1 && page <= totalPages);
+  
 
   return (
     <div className="flex items-center ">

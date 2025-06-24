@@ -14,7 +14,7 @@ import {
   // PageIcon,
   // PieChartIcon,
   // PlugInIcon,
-  // TableIcon,
+  TableIcon,
   // UserCircleIcon,
 } from "../icons/index";
 // import SidebarWidget from "./SidebarWidget";
@@ -33,11 +33,11 @@ const navItems: NavItem[] = [
     path: "/",
     // subItems: [{ name: "Ecommerce", path: "/", pro: false }],
   },
-  // {
-  //   icon: <CalenderIcon />,
-  //   name: "Calendar",
-  //   path: "/calendar",
-  // },
+  {
+    icon: <TableIcon />,
+    name: "Products",
+    path: "/products",
+  },
   // {
   //   icon: <UserCircleIcon />,
   //   name: "User Profile",

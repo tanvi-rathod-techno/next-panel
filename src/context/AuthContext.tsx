@@ -9,7 +9,7 @@ interface User {
   accessToken: string;
 }
 
-interface AuthContextType {
+interface AuthContextType { 
   user: User | null;
   login: (userData: User) => void;
   logout: () => void;
@@ -30,7 +30,6 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   
   const login = (userData: User) => {
-    console.log(userData)
     setUser(userData);
     localStorage.setItem("user", JSON.stringify(userData));
     localStorage.setItem("token", userData.accessToken);
