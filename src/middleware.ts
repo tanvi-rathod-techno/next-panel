@@ -25,5 +25,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/', '/signin', '/profile/:path*'], // Add more protected routes here
+  matcher: ['/', '/signin', '/profile/:path*','/products/:path*'],
 };
